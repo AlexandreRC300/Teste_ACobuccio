@@ -33,6 +33,10 @@ ErrMetodo:
 
 End Sub
 
+Private Sub mnuRelatorios_Click()
+    frmRelatorios.Show
+End Sub
+
 Private Sub mnuSair_Click()
     End
 End Sub

@@ -1,3 +1,4 @@
-frmCadastroTransacoes = 52, 52, 821, 478, Z, 26, 26, 897, 452, C
+frmCadastroTransacoes = 52, 52, 821, 478, , 26, 26, 897, 452, C
 MDIGerFiscal = 78, 78, 949, 504, , 52, 52, 923, 478, C
 Conexao = 156, 156, 925, 582, 
+frmRelatorios = 52, 52, 847, 478, Z, 26, 26, 821, 452, C

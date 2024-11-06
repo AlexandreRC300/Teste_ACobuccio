@@ -57,7 +57,7 @@ Begin VB.Form frmCadastroTransacoes
          _ExtentX        =   2566
          _ExtentY        =   661
          _Version        =   393216
-         Format          =   144244737
+         Format          =   144179201
          CurrentDate     =   45601
       End
       Begin VB.TextBox txtConsultaValorTransacao 
@@ -212,7 +212,7 @@ Begin VB.Form frmCadastroTransacoes
          _ExtentY        =   450
          _Version        =   393216
          Enabled         =   0   'False
-         Format          =   144244737
+         Format          =   144179201
          CurrentDate     =   45600
       End
       Begin VB.TextBox txtValorTransacao 
@@ -558,9 +558,6 @@ End Sub
 
 Private Sub cmdSair_Click()
     Unload Me
-    
-    
-    
 End Sub
 
 
@@ -587,29 +584,3 @@ ErrMetodo:
 
 End Sub
 
-Private Sub gerarLog(sMensagem As String)
-Dim registros As Integer
-
-On Error GoTo ErrMetodo
-
-'Set db = opendatabase(Text1.Text)
-'Set rs = db.openrecordset("Authors")
-
-'rs.MoveLast
-'rs.MoveFirst
-'registros = rs.RecordCount
-
-Open "c:\temp\log" & Format(Now(), "DDMMYYYYhhmmss") & ".txt" For Output As #1
-
-Print #1, sMensagem
-
-Close #1
-
-    Exit Sub
-
-ErrMetodo:
-    
-    Call gerarLog(Err.Number & " - " & Err.Description & " - cmdInserir_Click")
-    Exit Sub
-
-End Sub
